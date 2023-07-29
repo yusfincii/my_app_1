@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Application 1</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="merhaba"> Merhaba </string>
+
+    <string name="isim">Isminiz</string>
+    <string name="age">Yasiniz</string>
+    <string name="boy">Boyunuz</string>
+    <string name="takim">Tuttugunuz Takim</string>
+
+    <string name="gala">Galatasaray</string>
+    <string name="fener">Fenerbahce</string>
+
+    <string name="gonder">Gonder</string>
+
+    <string name="sonuclar">SONUCLAR</string>
+
+    <string name="isimCikti">Isim : </string>
+    <string name="yasCikti">Yas : </string>
+    <string name="boyCikti">Boy : </string>
+    <string name="takimCikti">Takim : </string>
+
+</resources>

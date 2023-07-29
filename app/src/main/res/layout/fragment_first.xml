@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral95"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/merhaba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:text="@string/merhaba"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/isimGirdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:ems="10"
+        android:hint="@string/isim"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/merhaba" />
+
+    <EditText
+        android:id="@+id/yasGirdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:ems="10"
+        android:hint="@string/age"
+        android:inputType="number|numberDecimal"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isimGirdi" />
+
+    <EditText
+        android:id="@+id/boyGirdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:ems="10"
+        android:hint="@string/boy"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yasGirdi" />
+
+    <RadioGroup
+        android:id="@+id/takimGirdi"
+        android:layout_width="271dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boyGirdi">
+
+        <RadioButton
+            android:id="@+id/radioButtonGalata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gala"
+            android:textSize="28sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFener"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fener"
+            android:textSize="28sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonGonder"
+        android:layout_width="155dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="@string/gonder"
+        android:textSize="28sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takimGirdi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
